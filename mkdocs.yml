@@ -1,0 +1,50 @@
+site_name: Noverfly API Documentation
+site_url: https://gloowflix-hash.github.io/noverfly-docs/
+repo_url: https://github.com/gloowflix-hash/noverfly-docs
+docs_dir: docs
+site_dir: site
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: orange
+      accent: orange
+nav:
+  - Home: introduction.md
+  - Getting Started:
+      - Introduction: introduction.md
+      - Getting Started: getting-started.md
+      - Contract Clarification: contract-clarification.md
+  - Core API:
+      - Authentication: authentication.md
+      - API Reference: api.md
+      - Database: database.md
+  - Cloud Services:
+      - Cloud Scripts: cloud-scripts.md
+      - DevAPI Automation: devapi-automation.md
+      - Live Streaming: live-streaming.md
+      - AI Cloud: ai-cloud-service.md
+      - Filter Kit: filter-kit.md
+      - Music Gateway: music-gateway.md
+  - Mobile & Push:
+      - Client Apps: client-apps.md
+      - Push Notifications: push-notifications.md
+      - Push FCM Cloud: push-fcm-cloud.md
+  - Realtime:
+      - Messenger: messenger-realtime.md
+      - Realtime Media: realtime-media.md
+  - Platform:
+      - Applications: applications.md
+      - CMS: cms.md
+      - GlowDesign: glowdesign.md
+      - E-Commerce: ecommerce.md
+      - Payments: payments.md
+      - Migrations & Jobs: migrations-and-jobs.md
+      - Deployment: deployment.md
+      - Security: security.md
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - tables
+  - toc:
+      permalink: true

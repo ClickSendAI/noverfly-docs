@@ -111,13 +111,26 @@ curl -X POST https://api.noverfly.com/v1/api/cloud/upload \
 |---|---|
 | [Introduction](docs/introduction.md) | Platform overview and current deployment model |
 | [Getting Started](docs/getting-started.md) | Step-by-step onboarding |
+| [Contract Clarification](docs/contract-clarification.md) | `gfk_`/`gfc_` vs legacy OpenAPI |
 | [Authentication](docs/authentication.md) | Dashboard JWT, site-user JWT, `gfk_`, `gfc_`, permissions, app auth |
 | [API Reference](docs/api.md) | Main route families and integration rules |
 | [Database / Data API](docs/database.md) | Collections and records API with `gfk_` |
+| [Cloud Scripts](docs/cloud-scripts.md) | Programmable scripts, feed, public routes |
+| [DevAPI Automation](docs/devapi-automation.md) | Workflows, functions, events |
 | [Build Applications](docs/applications.md) | Vite proxy example, frontend helper example, app-building flows |
-| [Realtime and Media](docs/realtime-media.md) | Chat, voice, calls, WebSocket signaling, Flivex processing, streaming |
-| [Push Notifications](docs/push-notifications.md) | Native push (FCM, APNs, Expo, Web Push VAPID) |
+| [Client Apps Android](docs/client-apps.md) | Register device, FCM, incoming calls |
+| [Push Notifications](docs/push-notifications.md) | FCM, APNs, Expo, Web Push VAPID |
+| [Push FCM Cloud (DevAPI)](docs/push-fcm-cloud.md) | Tenant FCM config, chat/call data-only |
+| [Live Streaming](docs/live-streaming.md) | `/v1/cloud/live/streams/*` |
+| [AI Cloud Service](docs/ai-cloud-service.md) | `/v1/cloud/ai/*` |
+| [Messenger & Realtime](docs/messenger-realtime.md) | Flivex Messenger REST + WebSocket |
+| [Filter Kit](docs/filter-kit.md) | AR filters DevAPI |
+| [Music Gateway](docs/music-gateway.md) | Music streaming DevAPI |
+| [Payments (GFK)](docs/payments.md) | Merchant payments infrastructure |
+| [Migrations & Jobs](docs/migrations-and-jobs.md) | SQL migrations + BullMQ workers |
+| [Realtime and Media](docs/realtime-media.md) | Chat, voice, calls, Flivex processing |
 | [CMS](docs/cms.md) | Content modeling and CMS concepts |
+| [GlowDesign](docs/glowdesign.md) | Visual editor |
 | [E-Commerce](docs/ecommerce.md) | Commerce capabilities |
 | [Deployment](docs/deployment.md) | Publish flow and delivery |
 | [Security](docs/security.md) | Security principles |
@@ -135,6 +148,10 @@ curl -X POST https://api.noverfly.com/v1/api/cloud/upload \
 | Data API | `/v1/api/data/*` and `/api/*` | `gfk_` |
 | Cloud API | `/v1/api/cloud/*` | `gfc_` |
 | Developer messenger | `/v1/cloud/messenger/*` | `gfk_` or `gfc_` |
+| Live streaming | `/v1/cloud/live/streams/*` | `gfk_` SECRET |
+| AI Cloud | `/v1/cloud/ai/*` | `gfk_` / JWT |
+| Cloud Scripts | `/v1/public/sites/:siteId/scripts/*` | Public / `gfk_` |
+| Client devices | `/api/client/register-device` | GFK public + optional JWT |
 | WebSocket realtime | `/ws` | JWT or API-key app auth |
 | Push notifications | `/v1/push/*`, `/v1/tenants/:tenantId/push/*`, `/v1/cloud/push/*` | Public, JWT, or `gfc_` |
 | Site-user auth | `/v1/app/:siteId/auth/*` and `/v1/public/sites/:siteId/auth/*` | Site-user JWT |

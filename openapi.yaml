@@ -1,4 +1,7 @@
 openapi: 3.0.3
+# NOTE: This OpenAPI spec is PARTIAL and aspirational for dashboard/CMS routes.
+# For the PRODUCTION developer contract (gfk_/gfc_, /v1/api/data/*, /v1/cloud/*),
+# see docs/api.md and docs/contract-clarification.md in this repository.
 info:
   title: NoverFly API
   description: |
@@ -68,10 +71,12 @@ components:
       bearerFormat: JWT
       description: JWT access token from /auth/login or /auth/register
     ApiKeyAuth:
-      type: http
-      scheme: bearer
-      bearerFormat: API Key
-      description: API key from /api-keys (prefix nf_sk_)
+      type: apiKey
+      in: header
+      name: X-Api-Key
+      description: |
+        PARTIAL SPEC — Production DevAPI uses gfk_ (SECRET) or gfc_ (PUBLIC) keys.
+        See docs/authentication.md and docs/contract-clarification.md.
 
   parameters:
     TenantId:

@@ -25,14 +25,13 @@ NoverFly is an **all-in-one SaaS platform** that combines:
 - 🤖 **AI Tools** — Content generation, design assistant, image generation
 - 📊 **Analytics** — Built-in page views, visitors, conversions
 
-All accessible through **two REST APIs**.
+All accessible through **one public API host** (`https://api.noverfly.com`) with two key families: **`gfk_`** (Data) and **`gfc_`** (Cloud).
 
-## Two APIs
+## API Host
 
-| API | Base URL | Purpose |
-|-----|----------|---------|
-| **NoverFly API** | `https://api.noverfly.com/v1` | Auth, sites, apps, CMS, database, e-commerce, analytics |
-| **GFK Storage API** | `https://gfk.noverfly.com` | File uploads, images, media storage |
+| Host | Purpose |
+|-----|----------|
+| **`https://api.noverfly.com`** | Auth, sites, Data API, Cloud API, live, AI, push, scripts |
 
 ## Quick Start
 
