@@ -198,3 +198,9 @@ Mêmes opérations que DevAPI, plus `/test` avec brouillon :
 ## Exemples génériques
 
 Templates dans [`docs/examples/scripts/`](examples/scripts/) — **non imposés** ; adaptez à vos collections.
+
+## Guide opérationnel
+
+Architecture Docker + BullMQ, envoi/suppression de `.script.js`, jointures multi-collections, triggers, présence messenger :
+
+→ **[cloud-scripts-operational-guide.md](cloud-scripts-operational-guide.md)**

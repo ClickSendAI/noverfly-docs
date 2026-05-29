@@ -116,6 +116,7 @@ curl -X POST https://api.noverfly.com/v1/api/cloud/upload \
 | [API Reference](docs/api.md) | Main route families and integration rules |
 | [Database / Data API](docs/database.md) | Collections and records API with `gfk_` |
 | [Cloud Scripts](docs/cloud-scripts.md) | Programmable scripts, feed, public routes |
+| [Cloud Scripts — guide opérationnel](docs/cloud-scripts-operational-guide.md) | BullMQ, triggers, multi-collections, présence |
 | [DevAPI Automation](docs/devapi-automation.md) | Workflows, functions, events |
 | [Build Applications](docs/applications.md) | Vite proxy example, frontend helper example, app-building flows |
 | [Client Apps Android](docs/client-apps.md) | Register device, FCM, incoming calls |

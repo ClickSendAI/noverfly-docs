@@ -25,10 +25,14 @@ Dossier `prisma/migrations_manual/` — appliquer après review DBA si absent du
 | Queue | Usage |
 |-------|-------|
 | `send-push` | FCM, APNs, Expo, Web Push |
-| `devapi-automation` | Workflows cloud |
+| `devapi-automation` | Workflows cloud, **`script_collection_trigger`**, cron DevAPI |
 | `ai-cloud` | Jobs AI async |
 | `follow-fanout` | Social fan-out |
 | `send-digest` | Notification digest |
 | `publish-site` | CDN publish |
+
+Job `script_collection_trigger` : après CRUD record Data API → exécute scripts avec triggers `onCreate`/`onUpdate`/`onDelete`.
+
+Guide : [cloud-scripts-operational-guide.md](cloud-scripts-operational-guide.md)
 
 Redis requis : `REDIS_HOST`, `REDIS_PORT`, `REDIS_PASSWORD`

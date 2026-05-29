@@ -21,6 +21,7 @@ nav:
       - Database: database.md
   - Cloud Services:
       - Cloud Scripts: cloud-scripts.md
+      - Cloud Scripts (opérationnel): cloud-scripts-operational-guide.md
       - DevAPI Automation: devapi-automation.md
       - Live Streaming: live-streaming.md
       - AI Cloud: ai-cloud-service.md
