@@ -1,0 +1,18 @@
+{
+  "name": "creality-api-docs",
+  "version": "1.0.0",
+  "description": "CreAIlity API Documentation",
+  "main": "index.js",
+  "scripts": {
+    "build": "python3 -m pip install --break-system-packages -q mkdocs mkdocs-material && python3 -m mkdocs build",
+    "start": "python3 -m mkdocs serve",
+    "dev": "python3 -m mkdocs serve"
+  },
+  "keywords": ["api", "documentation", "creality"],
+  "author": "CreAIlity",
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
