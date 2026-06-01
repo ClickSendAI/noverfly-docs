@@ -1,14 +1,16 @@
-site_name: Noverfly API Documentation
-site_url: https://gloowflix-hash.github.io/noverfly-docs/
-repo_url: https://github.com/gloowflix-hash/noverfly-docs
+site_name: CreAIlity API Documentation
+site_url: https://creality-api.example.com/
+repo_url: https://github.com/ClickSendAI/noverfly-docs
 docs_dir: docs
 site_dir: site
 theme:
   name: material
+  logo: assets/images/CreAIlity-app-logo.png
+  favicon: assets/images/CreAIlity-app-logo.png
   palette:
     - scheme: default
       primary: orange
-      accent: orange
+      accent: blue
 nav:
   - Home: introduction.md
   - Getting Started:
